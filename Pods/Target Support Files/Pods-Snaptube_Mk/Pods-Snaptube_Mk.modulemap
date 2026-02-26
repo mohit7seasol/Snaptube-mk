@@ -1,0 +1,6 @@
+framework module Pods_Snaptube_Mk {
+  umbrella header "Pods-Snaptube_Mk-umbrella.h"
+
+  export *
+  module * { export * }
+}

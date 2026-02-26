@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CropVideoFrameRatioCell" customModule="Snaptube_Mk" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="119" height="58"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="119" height="58"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gVp-EI-GSR">
+                        <rect key="frame" x="4" y="4" width="111" height="50"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ratio_bg" translatesAutoresizingMaskIntoConstraints="NO" id="G7U-m0-plX">
+                                <rect key="frame" x="0.0" y="0.0" width="111" height="50"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xOQ-aI-gKF">
+                                <rect key="frame" x="0.0" y="0.0" width="111" height="50"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="G7U-m0-plX" firstAttribute="top" secondItem="gVp-EI-GSR" secondAttribute="top" id="7hl-km-IsB"/>
+                            <constraint firstItem="xOQ-aI-gKF" firstAttribute="top" secondItem="gVp-EI-GSR" secondAttribute="top" id="BF5-Il-ddl"/>
+                            <constraint firstAttribute="trailing" secondItem="G7U-m0-plX" secondAttribute="trailing" id="Qjd-Bx-Zfo"/>
+                            <constraint firstAttribute="bottom" secondItem="G7U-m0-plX" secondAttribute="bottom" id="YDH-RM-EqY"/>
+                            <constraint firstItem="G7U-m0-plX" firstAttribute="leading" secondItem="gVp-EI-GSR" secondAttribute="leading" id="d7w-1i-P4K"/>
+                            <constraint firstAttribute="trailing" secondItem="xOQ-aI-gKF" secondAttribute="trailing" id="srQ-OY-sMZ"/>
+                            <constraint firstAttribute="bottom" secondItem="xOQ-aI-gKF" secondAttribute="bottom" id="uU6-Ba-OA6"/>
+                            <constraint firstItem="xOQ-aI-gKF" firstAttribute="leading" secondItem="gVp-EI-GSR" secondAttribute="leading" id="ulU-Ee-Vtn"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="gVp-EI-GSR" secondAttribute="bottom" constant="4" id="5IV-qr-i7A"/>
+                <constraint firstItem="gVp-EI-GSR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="4" id="DhO-Hi-6bn"/>
+                <constraint firstItem="gVp-EI-GSR" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="4" id="HKP-81-t6f"/>
+                <constraint firstAttribute="trailing" secondItem="gVp-EI-GSR" secondAttribute="trailing" constant="4" id="Vgy-vx-hCh"/>
+            </constraints>
+            <size key="customSize" width="119" height="58"/>
+            <connections>
+                <outlet property="ratioButton" destination="xOQ-aI-gKF" id="Imi-Kb-UuF"/>
+            </connections>
+            <point key="canvasLocation" x="180.91603053435114" y="-8.4507042253521139"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ratio_bg" width="60" height="32"/>
+    </resources>
+</document>
